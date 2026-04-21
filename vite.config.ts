@@ -13,7 +13,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'TrackingSDK',
       formats: ['umd', 'es'],
-      fileName: (format) => `tracking-sdk.${format === 'es' ? 'esm' : 'umd'}.js`,
+      fileName: (format) => `web-tracking-sdk.${format === 'es' ? 'esm' : 'umd'}.js`,
     },
     rollupOptions: {
       external: [],

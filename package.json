@@ -1,24 +1,28 @@
 {
-  "name": "tracking-sdk",
+  "name": "web-tracking-sdk",
   "version": "1.0.0",
   "description": "前端监控数据采集 SDK",
-  "main": "./dist/tracking-sdk.umd.js",
-  "module": "./dist/tracking-sdk.esm.js",
+  "main": "./dist/web-tracking-sdk.umd.js",
+  "module": "./dist/web-tracking-sdk.esm.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/tracking-sdk.esm.js",
-      "require": "./dist/tracking-sdk.umd.js"
+      "import": "./dist/web-tracking-sdk.esm.js",
+      "require": "./dist/web-tracking-sdk.umd.js"
     }
   },
-  "files": ["dist", "src"],
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "dev": "vite build --watch",
     "build": "vite build",
     "lint": "eslint src --ext .ts"
   },
   "devDependencies": {
+    "@types/node": "^25.6.0",
     "typescript": "^5.8.3",
     "vite": "^6.3.3",
     "vite-plugin-dts": "^4.5.3"
