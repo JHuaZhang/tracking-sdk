@@ -1,0 +1,24 @@
+.idea/
+node_modules/
+node-debug.log
+npm-debug.log
+.DS_Store
+**/*.swp
+**/*.swo
+coverage/
+.happypack/
+.vscode
+.history
+/build
+/dist
+/storybook-static
+.dumi
+.justconf/
+/test/coverage
+/node_modules
+/lib
+*.log
+/docs-dist
+
+# Ignore Vite temporary config timestamp files
+*.timestamp-*.mjs
